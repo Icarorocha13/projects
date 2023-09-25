@@ -1,0 +1,19 @@
+email = ()
+senha = ()
+cemail = input("Cadastre seu email: ")
+email = cemail
+csenha = input("Cadastre sua senha: ")
+senha = csenha
+while True:
+    bscemail = input("Digite seu email: ")
+    if bscemail != email:
+        print("Email errado!")    
+        continue
+    bscsenha = input("Digite sua senha: ")
+    if bscsenha != senha:
+        print("Senha errada!")
+        continue
+    elif bscsenha == senha:
+        break
+
+print("Login sucedido!")
